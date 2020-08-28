@@ -3,7 +3,8 @@
 
 <div class="banner--slider owl-carousel" data-owl-dots="true" data-owl-dots-style="2">
     <!-- Banner Item Start -->
-    <div class="banner--item" data-bg-img="{% static 'assets/img/banner-img/home-version-1/slider-bg-01.jpg' %}" data-overlay="0.75">
+    {% for slider in sliders %}
+    <div class="banner--item" data-bg-img="{{slider.image.url}}" data-overlay="0.75">
         <div class="vc--parent">
             <div class="vc--child">
                 <div class="container">
@@ -12,15 +13,20 @@
                             <!-- Banner Content Start -->
                             <div class="banner--content pt--70 pb--80 text-center">
                                 <div class="title">
-                                    <h1 class="h1 text-lightgray">Welcome To Community</h1>
+                                    <h1 class="h1 text-lightgray">{{slider.title}}</h1>
                                 </div>
 
                                 <div class="sub-title">
-                                    <h2 class="h2 text-lightgray">Connect, Share &amp; Engage</h2>
+                                    <h1 style="font-size: 40px;" class="h2 text-lightgray">{{slider.sub_title}}</h1>
+                                </div><br>
+
+
+                                <div class="sub-sub-title">
+                                    <h1 style="font-size: 50px; color:red;" class="h2 text-lightgray">{{slider.sub_sub_title}}</h1>
                                 </div>
 
                                 <div class="desc text-gray fs--16">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                                    <p>{{slider.short_text}}</p>
                                 </div>
 
                                 <div class="action text-uppercase">
@@ -35,76 +41,7 @@
             </div>
         </div>
     </div>
-    <!-- Banner Item End -->
-
-    <!-- Banner Item Start -->
-    <div class="banner--item" data-bg-img="{% static 'assets/img/banner-img/home-version-1/slider-bg-02.jpg' %}" data-overlay="0.75">
-        <div class="vc--parent">
-            <div class="vc--child">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-10 col-md-offset-1">
-                            <!-- Banner Content Start -->
-                            <div class="banner--content pt--70 pb--80 text-center">
-                                <div class="title">
-                                    <h1 class="h1 text-lightgray">Welcome To Community</h1>
-                                </div>
-
-                                <div class="sub-title">
-                                    <h2 class="h2 text-lightgray">Connect, Share &amp; Engage</h2>
-                                </div>
-
-                                <div class="desc text-gray fs--16">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-                                </div>
-
-                                <div class="action text-uppercase">
-                                    <a href="#" class="btn btn-white">Learn More</a>
-                                    <a href="#" class="btn btn-primary">See Members</a>
-                                </div>
-                            </div>
-                            <!-- Banner Content End -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Banner Item End -->
-
-    <!-- Banner Item Start -->
-    <div class="banner--item" data-bg-img="{% static 'assets/img/banner-img/home-version-1/slider-bg-03.jpg' %}" data-overlay="0.75">
-        <div class="vc--parent">
-            <div class="vc--child">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-10 col-md-offset-1">
-                            <!-- Banner Content Start -->
-                            <div class="banner--content pt--70 pb--80 text-center">
-                                <div class="title">
-                                    <h1 class="h1 text-lightgray">Welcome To Community</h1>
-                                </div>
-
-                                <div class="sub-title">
-                                    <h2 class="h2 text-lightgray">Connect, Share &amp; Engage</h2>
-                                </div>
-
-                                <div class="desc text-gray fs--16">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-                                </div>
-
-                                <div class="action text-uppercase">
-                                    <a href="#" class="btn btn-white">Learn More</a>
-                                    <a href="#" class="btn btn-primary">See Members</a>
-                                </div>
-                            </div>
-                            <!-- Banner Content End -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    {% endfor %}
     <!-- Banner Item End -->
 </div>
     

@@ -1,10 +1,26 @@
-<!-- templates/common/topbar.html -->
-{% load static %}  
+{% load static %}
 
-<div class="header--topbar bg-black">
+<div class="header--topbar">
     <div class="container">
+        <!-- Logo Start -->
+        <div class="header--topbar-logo float--left">
+            <a href="{% url 'index' %}">
+                <p 
+                    style="font-size: 20px; 
+                    margin-top: 25px;
+                    color: red;
+                    ">DIASPORA 
+                <span 
+                    style="padding: 8px; 
+                    border: 1px solid red;
+                    background: red;
+                    color: white;">INDONESIA</span> <span style="font-style: italic;">BETA Version 0.1</span></p></a>
+            <p> <span style="font-size: 24"> developed by ING</span></p>        
+        </div>
+        <!-- Logo End -->
+
         <!-- Header Topbar Links Start -->
-        <ul class="header--topbar-links nav ff--primary float--left">
+        <ul class="header--topbar-links nav ff--primary float--right">
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                     <span>En</span>
@@ -17,21 +33,6 @@
                     <li><a href="#">In</a></li>
                 </ul>
             </li>
-        </ul>
-        <!-- Header Topbar Links End -->
-
-        <!-- Header Topbar Social Start -->
-        <ul class="header--topbar-social nav float--left hidden-xs">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-        </ul>
-        <!-- Header Topbar Social End -->
-
-        <!-- Header Topbar Links Start -->
-        <ul class="header--topbar-links nav ff--primary float--right">
             <li>
                 <a href="cart.html" title="Cart" data-toggle="tooltip" data-placement="bottom">
                     <i class="fa fa-shopping-basket"></i>
@@ -39,9 +40,8 @@
                 </a>
             </li>
             <li>
-                <a href="#" class="btn-link">
-                    <i class="fa mr--8 fa-user-o"></i>
-                    <span>My Account</span>
+                <a href="#" title="Login" class="btn-link" data-toggle="tooltip" data-placement="bottom">
+                    <i class="fa fa-user-o"></i>
                 </a>
             </li>
         </ul>

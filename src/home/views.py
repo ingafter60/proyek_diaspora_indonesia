@@ -1,4 +1,10 @@
 from django.shortcuts import render
 
+from src.home.models import Slider
+
 def index(request):
-	return render(request, 'home/index.html')
+	sliders = Slider.objects.all()
+	data = {
+		'sliders':sliders
+	}
+	return render(request, 'home/index.html', data)
