@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    {% include 'common/head.html' %}
+</head>
+<body>
+
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div class="preloader--inner"></div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Wrapper Start -->
+    <div class="wrapper">
+        <!-- Header Section Start -->
+        <header class="header--section style--1">
+            <!-- Header Topbar Start -->
+            {% include 'common/topbar.html' %}
+            <!-- Header Topbar End -->
+
+            <!-- Header Navbar Start -->
+            {% include 'common/navbar.html' %}
+            <!-- Header Navbar End -->
+        </header>
+        <!-- Header Section End -->
+
+        <!-- MAIN CONTENT START -->
+        {% block content %}
+        {% endblock content %}
+        <!-- MAIN CONTENT END -->
+
+        <!-- Footer Section Start -->
+        <footer class="footer--section">
+            <!-- Footer Widgets Start -->
+            {% include 'common/footer_widgets.html' %}
+            <!-- Footer Widgets End -->
+
+            <!-- Footer Active Members Start -->
+            {% include 'common/footer_active_members.html' %}
+            <!-- Footer Active Members End -->
+
+            <!-- Footer Copyright Start -->
+            {% include 'common/footer_copyright.html' %}
+            <!-- Footer Copyright End -->
+        </footer>
+        <!-- Footer Section End -->
+    </div>
+    <!-- Wrapper End -->
+
+    <!-- Back To Top Button Start -->
+    <div id="backToTop">
+        <a href="#" class="btn"><i class="fa fa-caret-up"></i></a>
+    </div>
+    <!-- Back To Top Button End -->
+
+    <!-- ==== Plugins Bundle ==== -->
+    <script src="{% static 'assets/js/plugins.min.js' %}"></script>
+
+    <!-- ==== Main Script ==== -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+</html>

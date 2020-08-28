@@ -37,3 +37,19 @@
         new file:   templates/home/component/slider.html
         new file:   templates/home/component/sweet_moment.html
         modified:   templates/home/index.html
+
+### 6. Tempate inheritance
+
+    On branch master
+    Your branch is ahead of 'origin/master' by 1 commit.
+      (use "git push" to publish your local commits)
+
+    Changes to be committed:
+      (use "git reset HEAD <file>..." to unstage)
+
+            modified:   README.MD
+            new file:   templates/base.html
+            renamed:    templates/home/component/footer_active_members.html -> templates/common/footer_active_members.html
+            renamed:    templates/home/component/footer_copyright.html -> templates/common/footer_copyright.html
+            renamed:    templates/home/component/footer_widgets.html -> templates/common/footer_widgets.html
+            modified:   templates/home/index.html
