@@ -1,0 +1,50 @@
+<!-- templates/common/topbar.html -->
+{% load static %}  
+
+<div class="header--topbar bg-black">
+    <div class="container">
+        <!-- Header Topbar Links Start -->
+        <ul class="header--topbar-links nav ff--primary float--left">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span>En</span>
+                    <i class="fa fa-caret-down"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li class="active"><a href="#">En</a></li>
+                    <li><a href="#">Bn</a></li>
+                    <li><a href="#">In</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!-- Header Topbar Links End -->
+
+        <!-- Header Topbar Social Start -->
+        <ul class="header--topbar-social nav float--left hidden-xs">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        </ul>
+        <!-- Header Topbar Social End -->
+
+        <!-- Header Topbar Links Start -->
+        <ul class="header--topbar-links nav ff--primary float--right">
+            <li>
+                <a href="cart.html" title="Cart" data-toggle="tooltip" data-placement="bottom">
+                    <i class="fa fa-shopping-basket"></i>
+                    <span class="badge">3</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="btn-link">
+                    <i class="fa mr--8 fa-user-o"></i>
+                    <span>My Account</span>
+                </a>
+            </li>
+        </ul>
+        <!-- Header Topbar Links End -->
+    </div>
+</div>

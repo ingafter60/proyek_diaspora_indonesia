@@ -16,3 +16,24 @@
 	        modified:   diaspora/urls.py
 	        modified:   src/home/views.py
 	        new file:   templates/home/index.html
+
+### 5. Sagmenting index page
+
+	Changes to be committed:
+  	(use "git reset HEAD <file>..." to unstage)
+
+        modified:   README.MD
+        new file:   templates/common/head.html
+        new file:   templates/common/navbar.html
+        new file:   templates/common/topbar.html
+        new file:   templates/home/component/ads.html
+        new file:   templates/home/component/faq.html
+        new file:   templates/home/component/footer_active_members.html
+        new file:   templates/home/component/footer_copyright.html
+        new file:   templates/home/component/footer_widgets.html
+        new file:   templates/home/component/how_it_works.html
+        new file:   templates/home/component/most_popular_groups.html
+        new file:   templates/home/component/most_popular_members.html
+        new file:   templates/home/component/slider.html
+        new file:   templates/home/component/sweet_moment.html
+        modified:   templates/home/index.html
