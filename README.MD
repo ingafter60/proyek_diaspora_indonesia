@@ -80,3 +80,9 @@
             new file:   templates/home/component/perwakilan-ri.html
             modified:   templates/home/component/slider.html
             modified:   templates/home/index.html
+
+### 7. Create 'activity' app
+
+    > mkdir src/activity
+    > (venv38301) λ python manage.py startapp activity src/activity
+    > 

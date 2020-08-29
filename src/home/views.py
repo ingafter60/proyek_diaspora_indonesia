@@ -1,3 +1,5 @@
+#src/home/views.py
+ 
 from django.shortcuts import render
 
 from src.home.models import Slider

@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     # new
     'src.home',
+    'src.activity',
     # end new
     'django.contrib.admin',
     'django.contrib.auth',
