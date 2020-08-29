@@ -12,6 +12,7 @@ urlpatterns = [
    path('', views.index, name='index'),
    path('activity/', include('src.activity.urls')),
    path('member/', include('src.member.urls')),
+   path('group/', include('src.group.urls')),
 ]
 
 if settings.DEBUG:

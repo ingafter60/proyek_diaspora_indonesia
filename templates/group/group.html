@@ -1,0 +1,23 @@
+<!-- templates/group/group.html -->
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+        <!-- Page Header Start -->
+    	  {% include './component/header.html' %}
+        <!-- Page Header End -->
+
+        <!-- Page Wrapper Start -->
+        <section class="page--wrapper pt--80 pb--20">
+            <div class="container">
+                <div class="row">
+                    <!-- Main Content Start -->
+    					  {% include './component/content.html' %}
+                    <!-- Main Content End -->
+                </div>
+            </div>
+        </section>
+        <!-- Page Wrapper End -->
+{% endblock content %}
+
