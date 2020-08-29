@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     # new
     'src.home',
     'src.activity',
+    'src.member',
     # end new
     'django.contrib.admin',
     'django.contrib.auth',

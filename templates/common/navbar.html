@@ -27,7 +27,9 @@
                 <li class="dropdown {{home_page}}">
                     <a href="{% url 'index' %}">Home</a>
                 </li>
-                <li class="dropdown {{activity_page}}">
+                <li class="dropdown 
+                    {% if path == activity %}{{activity_page}}{% endif %}
+                    {% if path == member %}{{member_page}}{% endif %}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <span>Komunitas</span>
                         <i class="fa fa-caret-down"></i>
@@ -35,7 +37,7 @@
 
                     <ul class="dropdown-menu">
                         <li class="{{activity_page}}"><a href="{% url 'activity' %}"><span>Aktivitas</span></a></li>
-                        <li><a href="members.html"><span>Members</span></a></li>
+                        <li class="{{member_page}}"><a href="{% url 'member' %}"><span>Members</span></a></li>
                         <li><a href="groups.html"><span>Groups</span></a></li>
                     </ul>
                 </li>

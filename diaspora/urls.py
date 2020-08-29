@@ -11,6 +11,7 @@ urlpatterns = [
    path('admin/', admin.site.urls),
    path('', views.index, name='index'),
    path('activity/', include('src.activity.urls')),
+   path('member/', include('src.member.urls')),
 ]
 
 if settings.DEBUG:

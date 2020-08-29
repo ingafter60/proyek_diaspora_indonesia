@@ -1,0 +1,15 @@
+<!-- templates/member/component/header.html -->
+{% load static %}
+
+<div class="page--header pt--60 pb--60 text-center" data-bg-img="{% static 'assets/img/page-header-img/bg.jpg' %}" data-overlay="0.85">
+   <div class="container">
+       <div class="title">
+           <h2 class="h1 text-white">Members</h2>
+       </div>
+
+       <ul class="breadcrumb text-gray ff--primary">
+           <li><a href="{% url 'index' %}" class="btn-link">Home</a></li>
+           <li class="{{member_page}}"><span class="text-primary">Members</span></li>
+       </ul>
+   </div>
+</div>
