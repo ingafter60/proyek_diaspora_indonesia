@@ -42,17 +42,21 @@
                         <li class="{{group_page}}"><a href="{% url 'group' %}"><span>Groups</span></a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
+                <li class="dropdown 
+                    {% if path == forum %}{{forum_page}}{% endif %}
+                    {% if path == sub_forum %}{{sub_forum_page}}{% endif %}
+                    {% if path == topic %}{{topic_page}}{% endif %}
+                    {% if path == topic_replies %}{{topic_replies_page}}{% endif %}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <span>Forum</span>
                         <i class="fa fa-caret-down"></i>
                     </a>
 
                     <ul class="dropdown-menu">
-                        <li><a href="forums.html">Forums</a></li>
-                        <li><a href="sub-forums.html">Sub Forums</a></li>
-                        <li><a href="topics.html">Topics</a></li>
-                        <li><a href="topic-replies.html">Topic Replies</a></li>
+                        <li><a href="{% url 'forum' %}">Forums</a></li>
+                        <li><a href="{% url 'sub_forum' %}">Sub Forums</a></li>
+                        <li><a href="{% url 'topic' %}">Topics</a></li>
+                        <li><a href="{% url 'topic_replies' %}">Topic Replies</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">

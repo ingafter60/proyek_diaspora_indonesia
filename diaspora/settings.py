@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'src.activity',
     'src.member',
     'src.group',
+    'src.forum',
     # end new
     'django.contrib.admin',
     'django.contrib.auth',

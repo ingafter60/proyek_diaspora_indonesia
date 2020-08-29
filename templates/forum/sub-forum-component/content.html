@@ -1,0 +1,276 @@
+<!-- templates/forum/component/content.html -->
+{% load static %}
+
+<div class="main--content col-md-8 pb--60" data-trigger="stickyScroll">
+   <div class="main--content-inner drop--shadow">
+       <!-- Topics List Start -->
+       <div class="topics--list">
+           <table class="table">
+               <thead class="ff--primary fs--14 text-darkest">
+                   <tr>
+                       <th>Forum</th>
+                       <th>Topics</th>
+                       <th>Post</th>
+                       <th>Frieshness</th>
+                   </tr>
+               </thead>
+
+               <tbody>
+                   <tr>
+                       <td>
+                           <h4 class="h6 fw--500 text-darkest"><a href="topics.html" class="btn-link">HTML (Hypertext Markup Language)</a></h4>
+
+                           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry standard dummy text.</p>
+                       </td>
+                       <td>
+                           <p class="ff--primary fw--500 fs--14 text-darkest">12</p>
+                       </td>
+                       <td>
+                           <p class="ff--primary fw--500 fs--14 text-darkest">245</p>
+                       </td>
+                       <td>
+                           <p>2 days, 5 hours ago</p>
+
+                           <a href="member-activity-personal.html" class="topic--author">
+                               <span class="name">Michael F. Boothe</span>
+                               <span class="avatar"><img src="{% static 'assets/img/topics-img/avatar-01.jpg' %}" alt=""></span>
+                           </a>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                           <h4 class="h6 fw--500 text-darkest"><a href="topics.html" class="btn-link">CSS (Cascading Style Sheets)</a></h4>
+
+                           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry standard dummy text.</p>
+                       </td>
+                       <td>
+                           <p class="ff--primary fw--500 fs--14 text-darkest">05</p>
+                       </td>
+                       <td>
+                           <p class="ff--primary fw--500 fs--14 text-darkest">42</p>
+                       </td>
+                       <td>
+                           <p>2 days, 5 hours ago</p>
+
+                           <a href="member-activity-personal.html" class="topic--author">
+                               <span class="name">Christine H. Yepez</span>
+                               <span class="avatar"><img src="{% static 'assets/img/topics-img/avatar-01.jpg' %}" alt=""></span>
+                           </a>
+                       </td>
+                   </tr>
+               </tbody>
+           </table>
+       </div>
+       <!-- Topics List End -->
+   </div>
+
+   <div class="main--content-inner drop--shadow mt--30">
+       <!-- Topics List Start -->
+       <div class="topics--list">
+           <table class="table">
+               <thead class="ff--primary fs--14 text-darkest">
+                   <tr>
+                       <th>Topics</th>
+                       <th>Voices</th>
+                       <th>Post</th>
+                       <th>Frieshness</th>
+                   </tr>
+               </thead>
+
+               <tbody>
+                   <tr class="pinned">
+                       <td>
+                           <h4 class="h6 fw--500 text-darkest"><a href="topic-replies.html" class="btn-link">Love Sports</a></h4>
+
+                           <p>Started by <a href="member-activity-personal.html">Alice A. Baker</a> in <a href="#">sports</a> forum</p>
+                       </td>
+                       <td>
+                           <p class="ff--primary fw--500 fs--14 text-darkest">07</p>
+                       </td>
+                       <td>
+                           <p class="ff--primary fw--500 fs--14 text-darkest">21</p>
+                       </td>
+                       <td>
+                           <i class="text-primary fa fa-paperclip"></i>
+
+                           <p>2 days, 5 hours ago</p>
+
+                           <a href="member-activity-personal.html" class="topic--author">
+                               <span class="name">Alice A. Baker</span>
+                               <span class="avatar"><img src="{% static 'assets/img/topics-img/avatar-01.jpg' %}" alt=""></span>
+                           </a>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                           <h4 class="h6 fw--500 text-darkest"><a href="topic-replies.html" class="btn-link">How do I become a front-end engineer?</a></h4>
+
+                           <p>Started by <a href="member-activity-personal.html">Alan R. Parker</a></p>
+                       </td>
+                       <td>
+                           <p class="ff--primary fw--500 fs--14 text-darkest">07</p>
+                       </td>
+                       <td>
+                           <p class="ff--primary fw--500 fs--14 text-darkest">21</p>
+                       </td>
+                       <td>
+                           <p>2 days, 5 hours ago</p>
+
+                           <a href="member-activity-personal.html" class="topic--author">
+                               <span class="name">David J. Kleiner</span>
+                               <span class="avatar"><img src="{% static 'assets/img/topics-img/avatar-02.jpg' %}" alt=""></span>
+                           </a>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                           <h4 class="h6 fw--500 text-darkest"><a href="topic-replies.html" class="btn-link">I want to be a front-end engineer</a></h4>
+
+                           <p>Started by <a href="member-activity-personal.html">Clayton M. Sant</a></p>
+                       </td>
+                       <td>
+                           <p class="ff--primary fw--500 fs--14 text-darkest">07</p>
+                       </td>
+                       <td>
+                           <p class="ff--primary fw--500 fs--14 text-darkest">21</p>
+                       </td>
+                       <td>
+                           <p>2 days, 5 hours ago</p>
+
+                           <a href="member-activity-personal.html" class="topic--author">
+                               <span class="name">Barbara L. Posey</span>
+                               <span class="avatar"><img src="{% static 'assets/img/topics-img/avatar-03.jpg' %}" alt=""></span>
+                           </a>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                           <h4 class="h6 fw--500 text-darkest"><a href="topic-replies.html" class="btn-link">Learning front-end engineeringr</a></h4>
+
+                           <p>Started by <a href="member-activity-personal.html">Elizabeth D. Hernandez</a></p>
+                       </td>
+                       <td>
+                           <p class="ff--primary fw--500 fs--14 text-darkest">07</p>
+                       </td>
+                       <td>
+                           <p class="ff--primary fw--500 fs--14 text-darkest">21</p>
+                       </td>
+                       <td>
+                           <p>2 days, 5 hours ago</p>
+
+                           <a href="member-activity-personal.html" class="topic--author">
+                               <span class="name">William C. Morgan</span>
+                               <span class="avatar"><img src="{% static 'assets/img/topics-img/avatar-04.jpg' %}" alt=""></span>
+                           </a>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                           <h4 class="h6 fw--500 text-darkest"><a href="topic-replies.html" class="btn-link">How's the job market for front-end engineers?</a></h4>
+
+                           <p>Started by <a href="member-activity-personal.html">Ronald M. Horne</a></p>
+                       </td>
+                       <td>
+                           <p class="ff--primary fw--500 fs--14 text-darkest">07</p>
+                       </td>
+                       <td>
+                           <p class="ff--primary fw--500 fs--14 text-darkest">21</p>
+                       </td>
+                       <td>
+                           <p>2 days, 5 hours ago</p>
+
+                           <a href="member-activity-personal.html" class="topic--author">
+                               <span class="name">Diane H. Guzman</span>
+                               <span class="avatar"><img src="{% static 'assets/img/topics-img/avatar-05.jpg' %}" alt=""></span>
+                           </a>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                           <h4 class="h6 fw--500 text-darkest"><a href="topic-replies.html" class="btn-link">Where should I take a front-end engineering course?</a></h4>
+
+                           <p>Started by <a href="member-activity-personal.html">Amanda D. Shaw</a></p>
+                       </td>
+                       <td>
+                           <p class="ff--primary fw--500 fs--14 text-darkest">07</p>
+                       </td>
+                       <td>
+                           <p class="ff--primary fw--500 fs--14 text-darkest">21</p>
+                       </td>
+                       <td>
+                           <p>2 days, 5 hours ago</p>
+
+                           <a href="member-activity-personal.html" class="topic--author">
+                               <span class="name">Diane H. Guzman</span>
+                               <span class="avatar"><img src="{% static 'assets/img/topics-img/avatar-06.jpg' %}" alt=""></span>
+                           </a>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                           <h4 class="h6 fw--500 text-darkest"><a href="topic-replies.html" class="btn-link">How to get front-end engineers list?</a></h4>
+
+                           <p>Started by <a href="member-activity-personal.html">Amanda D. Shaw</a></p>
+                       </td>
+                       <td>
+                           <p class="ff--primary fw--500 fs--14 text-darkest">07</p>
+                       </td>
+                       <td>
+                           <p class="ff--primary fw--500 fs--14 text-darkest">21</p>
+                       </td>
+                       <td>
+                           <p>2 days, 5 hours ago</p>
+
+                           <a href="member-activity-personal.html" class="topic--author">
+                               <span class="name">Sara Mitchell</span>
+                               <span class="avatar"><img src="{% static 'assets/img/topics-img/avatar-07.jpg' %}" alt=""></span>
+                           </a>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                           <h4 class="h6 fw--500 text-darkest"><a href="topic-replies.html" class="btn-link">Advantages of front-end engineer</a></h4>
+
+                           <p>Started by <a href="member-activity-personal.html">Lida A. Copeland</a></p>
+                       </td>
+                       <td>
+                           <p class="ff--primary fw--500 fs--14 text-darkest">07</p>
+                       </td>
+                       <td>
+                           <p class="ff--primary fw--500 fs--14 text-darkest">21</p>
+                       </td>
+                       <td>
+                           <p>2 days, 5 hours ago</p>
+
+                           <a href="member-activity-personal.html" class="topic--author">
+                               <span class="name">Zachary West</span>
+                               <span class="avatar"><img src="{% static 'assets/img/topics-img/avatar-08.jpg' %}" alt=""></span>
+                           </a>
+                       </td>
+                   </tr>
+               </tbody>
+           </table>
+       </div>
+       <!-- Topics List End -->
+
+       <!-- Page Count Start -->
+       <div class="page--count pt--30">
+           <label class="ff--primary fs--14 fw--500 text-darker">
+               <span>Viewing 8 topics - 1 through 8 (of 8 total)</span>
+
+               <a href="#" class="btn-link"><i class="fa fa-caret-left"></i></a>
+               <input type="number" name="page-count" value="01" class="form-control form-sm">
+               <a href="#" class="btn-link"><i class="fa fa-caret-right"></i></a>
+
+               <span>08</span>
+           </label>
+       </div>
+       <!-- Page Count End -->
+   </div>
+
+   <div class="alert mt--30">
+       <div class="alert--inner ff--primary text-white bg-primary">
+           <p>You must be logged in to create new topics.</p>
+       </div>
+   </div>
+</div>

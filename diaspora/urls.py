@@ -13,6 +13,7 @@ urlpatterns = [
    path('activity/', include('src.activity.urls')),
    path('member/', include('src.member.urls')),
    path('group/', include('src.group.urls')),
+   path('forum/', include('src.forum.urls')),
 ]
 
 if settings.DEBUG:

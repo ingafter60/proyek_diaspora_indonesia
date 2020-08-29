@@ -1,0 +1,28 @@
+<!-- templates/forum/sub-forum.html -->
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Page Header Start -->
+{% include './sub-forum-component/header.html' %}
+<!-- Page Header End -->
+
+<!-- Page Wrapper Start -->
+<section class="page--wrapper pt--80 pb--20">
+   <div class="container">
+       <div class="row">
+           <!-- Main Content Start -->
+				{% include './sub-forum-component/content.html' %}
+           <!-- Main Content End -->
+
+           <!-- Main Sidebar Start -->
+				{% include './common/sidebar.html' %}
+           <!-- Main Sidebar End -->
+       </div>
+   </div>
+</section>
+<!-- Page Wrapper End -->
+{% endblock content %}
+
