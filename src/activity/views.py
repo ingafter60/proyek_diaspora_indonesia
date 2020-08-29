@@ -3,5 +3,8 @@
 from django.shortcuts import render
 
 
-def index(request):
-	return render(request, 'activity/activity.html')
+def activity(request):
+	data = {
+		'activity_page': 'active',
+	}	
+	return render(request, 'activity/activity.html', data)

@@ -24,17 +24,17 @@
         <div id="headerNav" class="navbar-collapse collapse float--left">
             <!-- Header Nav Links Start -->
             <ul class="header--nav-links style--2 nav ff--primary">
-                <li class="active">
-                    <a href="#">Home</a>
+                <li class="dropdown {{home_page}}">
+                    <a href="{% url 'index' %}">Home</a>
                 </li>
-                <li class="dropdown">
+                <li class="dropdown {{activity_page}}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <span>Komunitas</span>
                         <i class="fa fa-caret-down"></i>
                     </a>
 
                     <ul class="dropdown-menu">
-                        <li><a href="activity.html"><span>Aktivitas</span></a></li>
+                        <li class="{{activity_page}}"><a href="{% url 'activity' %}"><span>Aktivitas</span></a></li>
                         <li><a href="members.html"><span>Members</span></a></li>
                         <li><a href="groups.html"><span>Groups</span></a></li>
                     </ul>
